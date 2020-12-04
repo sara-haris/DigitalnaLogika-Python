@@ -153,7 +153,7 @@ elif 'g'in nacinPlacanja:
 else:
     print("NISTE UNIJELI KOREKTAN KARAKTER ZA PLACANJE!!!") """
 #Zadatak cetiri:
-metara=int(input("Molim vas unesite broj metara stana: "))
+""" metara=int(input("Molim vas unesite broj metara stana: "))
 kvadrat=metara*2
 cijenaKvadrata=0
 cijenaStana=0
@@ -171,8 +171,33 @@ else:
     cijenaKvadrata=1500
     cijenaStana=cijenaKvadrata*kvadrat
     print("Cijena stana unesenih velicina iznosi: ",cijenaStana)
+ """
 
+############################# NOVA NASTAVA ###########################################################
+""" string="Ababababababababa"
+print('indeksi od tri do sest su:', string[3:7])#Kljucna rijec INDEKSI
+print("Prva tri karaktera su: ",string[0:3])#Kljucna rijec KARAKTERI
+ """
+ #Zadatak sa ulaznicama za kino:
+godine=int(input("Molim vas unesite vase godine: "))
+vrijeme=int(input("Molim vas unesite vrijeme: "))
+cijena=10
 
- 
+if (godine<18 and vrijeme<12):
+    cijena=cijena-cijena*0.3
+    print('Vasa cijena je umanjena za 30 posto i iznosi: ', cijena,"KM")
+elif(godine<18 and vrijeme>12):
+    cijena=cijena-cijena*0.1
+    print('Vasa cijena je umanjena za 10 posto i iznosi: ',cijena, "KM" )
+elif (godine>65 and vrijeme<12):
+     cijena=cijena-cijena*0.5
+     print('Vasa cijena je umanjena za 50 posto i iznosi: ',cijena,"KM" )
+elif (godine>65 and vrijeme>12):
+     cijena=cijena-cijena*0.3
+     print('Vasa cijena je umanjena za 30 posto i iznosi: ',cijena,"KM" )
+else:
+    print("Cijena za vas je regularna i iznosi: ",cijena,'KM') 
+###########################################################################################################
+
 
 
