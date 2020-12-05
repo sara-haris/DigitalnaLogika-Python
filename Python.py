@@ -179,7 +179,7 @@ print('indeksi od tri do sest su:', string[3:7])#Kljucna rijec INDEKSI
 print("Prva tri karaktera su: ",string[0:3])#Kljucna rijec KARAKTERI
  """
  #Zadatak sa ulaznicama za kino:
-godine=int(input("Molim vas unesite vase godine: "))
+""" godine=int(input("Molim vas unesite vase godine: "))
 vrijeme=int(input("Molim vas unesite vrijeme: "))
 cijena=10
 
@@ -196,8 +196,23 @@ elif (godine>65 and vrijeme>12):
      cijena=cijena-cijena*0.3
      print('Vasa cijena je umanjena za 30 posto i iznosi: ',cijena,"KM" )
 else:
-    print("Cijena za vas je regularna i iznosi: ",cijena,'KM') 
+    print("Cijena za vas je regularna i iznosi: ",cijena,'KM')  """
 ###########################################################################################################
 
+ #Zadatak sa unosom A,B,c i D i program treba da kaze za koje kombinacije ce biti 0 ili 1 na izlazu\
+ #ako je  uslov da je 1 samo ako su dva,tri ili cetiri ulaza 1!
+A=int(input("Molim vas unesite ulaz A:"))
+B=int(input("Molim vas unesite ulaz B: "))
+C=int(input("Molim vas unesite ulaz C: "))
+D=int(input("Molim vas unesite ulaz D: "))
+F=0
+
+if(A==0 and B==0 and C==0 and D==0) or (A==0 and B==0 and C==0 and D==1) or (A==0 and B==0 and C==1 and D==0) or (A==0 and B==1 and C==0 and D==0) or (A==1 and B==0 and C==0 and D==0):
+      print("Vrijednost na izlazu je: ",F)
+else:
+    F=1
+    print("Vrijednost na izlazu je: ",F)
+
+#############################################################################################################
 
 
