@@ -201,7 +201,7 @@ else:
 
  #Zadatak sa unosom A,B,c i D i program treba da kaze za koje kombinacije ce biti 0 ili 1 na izlazu\
  #ako je  uslov da je 1 samo ako su dva,tri ili cetiri ulaza 1!
-A=int(input("Molim vas unesite ulaz A:"))
+""" A=int(input("Molim vas unesite ulaz A:"))
 B=int(input("Molim vas unesite ulaz B: "))
 C=int(input("Molim vas unesite ulaz C: "))
 D=int(input("Molim vas unesite ulaz D: "))
@@ -211,8 +211,50 @@ if(A==0 and B==0 and C==0 and D==0) or (A==0 and B==0 and C==0 and D==1) or (A==
       print("Vrijednost na izlazu je: ",F)
 else:
     F=1
-    print("Vrijednost na izlazu je: ",F)
+    print("Vrijednost na izlazu je: ",F) """
 
 #############################################################################################################
 
+################################ NOVA NASTAVA################################################################
+""" broj=0
+while broj<10:
+    broj+=1
+    print(broj,end=',')# end='' sa time odvajas  vodoravno
+ """
+ ##################################################################
+""" broj=0
+while broj!=5:
+    broj=int(input("Unesite neki broj: "))
+    if broj==5:
+        print("Svaka cast pogodili ste ")
+    else:
+        print("Pokusajte ponovo!")  """   
+####################################################################
+""" n=int(input('Unesite broj: '))
+suma=0
+brojac=0
+while brojac<=n:
+    suma+=brojac
+    brojac+=1
+print("Suma je : ",suma) """
+####################################################################
+suma=0
+brojac=1
+x=10
+while brojac<=x:
+    suma+=brojac
+    brojac+=1
+    if brojac==7:
+        break
+    
+print("Suma  od 0 do 7 je: ",suma)
 
+###################################################
+""" for i in range (1,11):
+    if(i%2==0):
+     print (i)
+ """
+######################################
+""" for i in "Fakultet informacijskih tehnologija":
+    print(i)
+ """
