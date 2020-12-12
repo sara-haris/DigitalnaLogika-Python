@@ -238,7 +238,7 @@ while brojac<=n:
     brojac+=1
 print("Suma je : ",suma) """
 ####################################################################
-suma=0
+""" suma=0
 brojac=1
 x=10
 while brojac<=x:
@@ -247,7 +247,7 @@ while brojac<=x:
     if brojac==7:
         break
     
-print("Suma  od 0 do 7 je: ",suma)
+print("Suma  od 0 do 7 je: ",suma) """
 
 ###################################################
 """ for i in range (1,11):
@@ -258,3 +258,156 @@ print("Suma  od 0 do 7 je: ",suma)
 """ for i in "Fakultet informacijskih tehnologija":
     print(i)
  """
+ #######################Zadaci#############################
+""" broj=0
+while broj<7:
+    broj+=1
+    print(broj,end=';')
+ """
+ ######################################
+""" broj=int(input("MOlim vas unesite broj: "))
+while  ((broj>=1 or broj<=10) and broj!=5): #Stavljas za uslov rang brojeva od 1 do 10 i da je razlicit od 5
+    print("Broj nije pogodjen, ponovo !")
+    broj=int(input("MOlim vas unesite broj: "))
+    
+print("Bravo pogodili ste broj!")
+ """
+ ##################################################
+
+""" brojac=1
+suma=0
+n=int(input('Unesi broj '))
+while brojac<=n: # Mora biti <= uneseni broj jer treba i njega zbrojiti
+    suma=suma+brojac
+    brojac+=1
+print('Suma brojeva do unesenog broja je: ',suma) """
+#######################################################
+""" string="Hello World"
+brojac=1
+while brojac<=5:
+    print(string)
+    brojac+=1
+ """
+ ##################################
+""" n=int(input("unesi broj:" ))
+brojac=1
+while brojac<=n:
+    print(brojac*brojac)
+    brojac+=1
+     """
+###################################
+""" granica=10
+brojac=1
+suma=0
+while brojac<=granica:
+    if(brojac%2==0):
+        suma+=brojac
+    brojac+=1#brojac moras incrementirat u while indentationu!   
+print("Suma svih parnih brojeva je: ",suma)
+ """
+""" broj=11
+brojac=1
+while brojac<=10:
+    broj-=1# Broj je u pocetku 11 jer ga ovdje smanji odmah a prije ga nije ispisao
+    print(broj)
+    brojac+=1 """
+####################################################
+""" granica=10
+suma=0
+brojac=1
+while brojac<=granica:
+    suma+=brojac
+    brojac+=1
+    if(brojac==7):#Suma ne uzme onaj element kojem je brojac jednak!
+        suma+=brojac#Ako zelim da ubrojim i 7!
+        break
+print("Suma je: ",suma) """
+###################################################
+""" for i in range(1,11):
+    print(i,end=',') """
+###################################################
+""" for i in range (1,11):
+    if i%2!=0:
+        print(i)
+    if i==7:
+        break """
+###################################################
+""" for i in range(1,11):
+    if i!=7:
+        print(i) """
+###################################################
+""" for i in range(1,6):
+    print("FIT")
+    
+ """
+####################################################
+""" x=int(input("Molim vas unesite koliko puta zelite da se ispise FIT": ))
+for i in range (x):#Pocetni ili start parametar se ommita!
+    print("FIT")
+
+     """
+######################################################
+""" string="Ja sam Haris i imam 19 godina"
+for i in string:
+    print (i) """
+
+#######################################################
+""" string="FIT"
+for i in string:
+    if i=='T':
+        break
+    print(i)    """
+#######################################################
+""" suma=0
+for i in range(5,-1,-1): #Posto se unazad treba brojac kretati  stepen pomaka moramo staviti na -1
+    suma+=i
+print("Suma brojeva je: ",suma)
+ """
+
+#############################################################
+""" suma=0
+for i in range (1,11):
+    if i%2!=0:
+        suma+=i
+print(suma)   
+
+suma=0
+for i in range (1,6):
+    if i%2!=0:
+        suma+=i
+print(suma)     """    
+########################################################
+""" for i in range(1,11):
+    if(i%2==0):
+        print("Parni br su: ",i,end='; ')
+    print("Kvadrati su: ",i**2,end='; ')
+    if(i%5==0):
+        print("Brojevi djeljivi sa 5 su:",i,end='; ') """
+###############################################################
+""" string=input("Molim vas unesite receniu koju zelite da ispisete: ")
+broj=int(input("MOlim vas unesite koliko  broj ponavljanja: " ))
+for i in range(broj):
+    print(string) """
+###############################################################
+""" x=int(input("Molim vas unesite broj starta: "))
+y=int(input("Molim vas unesite broj gornje granice: "))
+for  i in range(x,y):
+      print(i*y) """
+###############################################################
+""" x=int(input("Unesite broj redova: "))
+y=int(input("Unesite broj kolona: "))
+znak=input("Unesite znak kojim zelite ispuniti crtez: ")
+
+for i in range(x):
+    for j in range(y):
+        print(znak,end=' ')
+    print() """
+
+################################################################
+string="FIT"
+for i in range(5):
+    print("* ",end=" ")
+    for j in string:
+        print(j)
+    print("* ")
+    
