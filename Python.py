@@ -404,10 +404,147 @@ for i in range(x):
     print() """
 
 ################################################################
-string="FIT"
+""" string="FIT"
 for i in range(5):
     print("* ",end=" ")
     for j in string:
         print(j)
-    print("* ")
-    
+    print("* ") """
+###########################################NOVA NASTAVA###################################
+""" ime=input("Unesite ime molim vas: ")
+def pozdrav (ime):
+    print ('Dobro jutro',ime)
+pozdrav(ime) """
+#################################################
+""" broj=int(input("Molim vas unesite broj: "))
+def parnost(broj):
+    if(broj%2==0):
+        print("Broj je paran!")
+    else:
+      print("Broj nije paran")
+parnost(broj) """
+####################################################
+""" a=int(input("Unesite prvi broj: "))
+b=int(input("Unesite drugi  broj: ")) 
+def mnozenje(a,b):
+    print("Proizvod je: ",a*b)
+for i in range(1,4):
+    a=int(input("Unesite prvi broj: "))
+    b=int(input("Unesite drugi  broj: "))
+    mnozenje(a,b)  """
+####################################################
+""" def funkcija1():
+    x=15
+    print("Broj u fijije: ",x)
+x=20
+funkcija1()
+print("Izvan fije je: ",x) """
+#####################################################
+""" def kvadrat(a):
+    return a*a
+print(kvadrat(5)) """
+######################################################
+""" a=int(input("Unesi br:"))
+b=int(input("Unesi br:"))
+c=int(input("Unesi br:"))
+def artm(a,b,c):
+    return (a+b+c)/3
+print(artm(a,b,c)) """
+###################################################
+""" n=int(input("Unesite broj: "))
+def zbir(n):
+    zbir=0
+    for i in range(1,n+1):
+        #Ako ovdje deklar zbir on se stalno na nulu stavlja!!!
+        zbir=zbir+i
+    return zbir
+print("Zbir je:",zbir(n)) """
+#####################################################################
+""" x=int(input("Molim vas unesite broj: "))
+def pozorneg(x):
+    if(x<0):
+        print("Broj",x," je  negativan")
+    elif (x==0):
+        print("Broj",x," je nula (0)")
+    else:
+        print("Broj",x," je pozitivan")
+pozorneg(x); """
+##################################################################
+""" def zbir():
+    zbir=0#Ovdje deklar varijablu!!!
+    for i in range(1,11):
+        zbir+=i
+    return zbir# returnas poslije fora UVIJEK!
+print("Suma je:",zbir()) """
+################################################################
+""" for i in range(4):
+    print("*"*5)#Printas za svaki red 5 zvjezdica """
+################################################################
+""" string="FIT"
+n=int(input("Molim vas unesite broj redova: "))
+for i in range (n):
+    print("*"*5)
+    for j in string:
+        print(j,) """
+######################################################################
+""" for g in range(5):
+    for h in range(4):
+        print("*",end=" ")
+    print() """
+######################################################################
+""" a=int(input("Molim vas unesite prvi broj: "))
+b=int(input("Molim vas unesite drugi broj: "))
+znak=input("MOlim vas unesite operaciju")
+def kalkulator(a,b,znak):
+    if znak=='+':
+        return a+b
+    elif znak=='-':
+        return a-b
+    elif znak=='*':
+        return a*b
+    elif znak=='/':
+        if(b!=0):
+            return a/b
+        else:
+            return print("Ne moze se dijeliti sa 0!")
+    else:
+        return print("Neispravan simbol operacije!!!")
+print("Unijeli ste broj",a," i broj ",b," sa operacijom ",znak,"gdje je rezultat: ",kalkulator(a,b,znak)) """
+##############################################################################################################
+""" print("IGRAC 1")
+a=int(input("Unesi broj za pogadjanje: "))
+print("IGRAC 2")
+b=int(input("Pokusaj pogoditi broj od IGRAC 1 "))
+
+def igra(a,b):
+    brojac=1
+    while b!=a:
+        print("Netacno,probaj opet")
+        b=int(input("Pokusaj pogoditi broj od IGRAC 1 "))
+        brojac+=1
+    return print("Bravo pogodili ste broj od IGRAC 1, trebalo vam je ",brojac," pokusaja")
+igra(a,b) """
+#############################################################################################
+""" cijenaArtikla=int(input("Molim vas unesite cijenu datog proizvoda: "))
+kolicina=int(input("Molim vas unesite kolicinu artikala koje ste kupili: "))
+
+
+def popust(cijenaArtikla,kolicina):
+    racun=cijenaArtikla*kolicina
+    znak=input("Unesite 'k' za placanje karticom ili 'g' za placanje gotovinom:")
+    if znak=='k':
+        racun=racun+racun*0.15
+        return print("Na vas konacni iznos se dodaje 15% te vas racun iznosi:",racun)
+    elif znak=='g':
+        racun=racun-racun*0.5
+        return print("Ostvarujete popust od 5%, a vas racun iznosi: ",racun)
+    else:
+        return print("Pogresan unos nacina placanja! Vas normalan racun je: ",racun)
+popust(cijenaArtikla,kolicina) """
+
+string="balaala"
+for i in string:# Ako je "string" onda ce taj string gledati kao s t r i n g , a ako je string onda je b a l .... 
+    print(i)
+
+
+
