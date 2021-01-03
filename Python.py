@@ -541,10 +541,37 @@ def popust(cijenaArtikla,kolicina):
     else:
         return print("Pogresan unos nacina placanja! Vas normalan racun je: ",racun)
 popust(cijenaArtikla,kolicina) """
-
+#########################################################################################
+""" 
 string="balaala"
-for i in string:# Ako je "string" onda ce taj string gledati kao s t r i n g , a ako je string onda je b a l .... 
-    print(i)
+for i in "string":# Ako je "string" onda ce taj string gledati kao s t r i n g , a ako je string onda je b a l .... 
+    print(i) """
+###############################################################################
+#Napravi fiju koja racuna  eksponent  broja koji unese korisnik (pow):
+""" broj=int(input("Molim vas unesite broj: "))
+e=int(input("Molim vas unesite eksponent: "))
 
-
-
+def mojpow(broj,eksponent):
+    #return broj**eksponent
+    # Ili smo mogli return pow(broj,eksponent)
+    return pow(broj,eksponent)
+print("Rezultat  je: ",mojpow(broj,e)) """
+###############################################################################
+""" string="Haris"
+n=int(input("Molim vas unesite koliko puta zelite ispis : "))
+def ispisi( string):
+    print(string*n) 
+ispisi(string)#Ovo je poziv """
+################################################################################
+#napraviti fiju koja racuna parne i neparne brojeve do nekog krajnjeg broja unesenog od korisnika:
+granica=int(input("Molim vas unesite kranju granicu : "))
+def ParniNeparniBrojevi(granica):
+    sumaP=0;
+    sumaN=0;
+    for i in range(1,granica+1):#Stavlja se granica (krajni broj) +1 jer zelimo  da se uzme i taj broj!
+        if (i%2==0):
+            sumaP= sumaP+i
+        else:
+            sumaN=sumaN+i
+    return print("Suma parnih je: ",sumaP, " a suma neparnih je: ",sumaN)
+ParniNeparniBrojevi(granica)    
