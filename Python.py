@@ -573,5 +573,8 @@ def ParniNeparniBrojevi(granica):
             sumaP= sumaP+i
         else:
             sumaN=sumaN+i
-    return print("Suma parnih je: ",sumaP, " a suma neparnih je: ",sumaN)
-ParniNeparniBrojevi(granica)    
+    #return print("Suma parnih je: ",sumaP, " a suma neparnih je: ",sumaN)
+    return sumaP,sumaN #Ovako moze isto!
+x,y=ParniNeparniBrojevi(granica)#Prvi return fije ode u x a drugi return u y     
+print("suma parnih je:",x)
+print("Suma neparnih je: ",y)
