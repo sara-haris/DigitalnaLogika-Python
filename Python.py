@@ -361,8 +361,8 @@ for i in string:
 """ suma=0
 for i in range(5,-1,-1): #Posto se unazad treba brojac kretati  stepen pomaka moramo staviti na -1
     suma+=i
-print("Suma brojeva je: ",suma)
- """
+print("Suma brojeva je: ",suma) """
+
 
 #############################################################
 """ suma=0
@@ -486,8 +486,8 @@ for i in range (n):
     print("*"*5)
     for j in string:
         print(j,) """
-######################################################################
-""" for g in range(5):
+""" ######################################################################
+for g in range(5):
     for h in range(4):
         print("*",end=" ")
     print() """
@@ -564,7 +564,7 @@ def ispisi( string):
 ispisi(string)#Ovo je poziv """
 ################################################################################
 #napraviti fiju koja racuna parne i neparne brojeve do nekog krajnjeg broja unesenog od korisnika:
-granica=int(input("Molim vas unesite kranju granicu : "))
+""" granica=int(input("Molim vas unesite kranju granicu : "))
 def ParniNeparniBrojevi(granica):
     sumaP=0;
     sumaN=0;
@@ -577,4 +577,13 @@ def ParniNeparniBrojevi(granica):
     return sumaP,sumaN #Ovako moze isto!
 x,y=ParniNeparniBrojevi(granica)#Prvi return fije ode u x a drugi return u y     
 print("suma parnih je:",x)
-print("Suma neparnih je: ",y)
+print("Suma neparnih je: ",y) """
+
+##########################################################################
+#Napisati fiju za racunanje eksponenta:
+""" baza=int(input("Unesite broj: "))
+eksponent=int(input("Unesite potenciju: "))
+def uradiEksponent(baza, eksponent):
+    return pow(baza,eksponent)
+    #ili return baza**eksponent
+print("Rezultat je: ", uradiEksponent(baza,eksponent)) """
